@@ -22,9 +22,8 @@ def motorControl():
   motor = str(input("Select a motor to access(1,2,3,4): "))
   selectedMotor = str(f'{arm}{motor}')
   distance = float(input(f'Motor {selectedMotor} is at {motorFinal}mm, how far would you like to move it?(in increments of 25.4mm): '))
-  distance = distance*25.4
-  
   #sets the distance to move in increments of 25.4 mm
+  distance = distance*25.4
 
   #checks which arm and motor is selected and moves motor to the selected position
   if arm == "A":
@@ -33,9 +32,11 @@ def motorControl():
       if (A1 - distance >= 0 and A1-distance <= 254):
         A1 = (A1 - distance)
         print(f'Motor {selectedMotor} is at {A1}')
+      #checks if the value is less than 0 and corrects for it
       elif (A1 - distance < 0):
         A1 = 0
         print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {A1}')
+      #checks if the value is too high(more than 254) and corrects for it
       elif (A1 - distance > 254):
           A1 = 254
           print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {A1}')
@@ -44,9 +45,11 @@ def motorControl():
       if (A2 - distance >= 0 and A2-distance <= 254):
         A2 = (A2 - distance)
         print(f'Motor {selectedMotor} is at {A2}')
+      #checks if the value is less than 0 and corrects for it
       elif (A2 - distance < 0):
         A2 = 0
         print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {A2}')
+      #checks if the value is too high(more than 254) and corrects for it
       elif (A2 - distance > 254):
         A2 = 254
         print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {A2}')
@@ -55,9 +58,11 @@ def motorControl():
       if (A3 - distance >= 0 and A3-distance <= 254):
         A3 = (A3 - distance)
         print(f'Motor {selectedMotor} is at {A3}')
+      #checks if the value is less than 0 and corrects for it
       elif (A3 - distance < 0):
         A3 = 0
         print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {A3}')
+      #checks if the value is too high(more than 254) and corrects for it
       elif (A3 - distance > 254):
         A3 = 254
         print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {A3}')
@@ -66,9 +71,11 @@ def motorControl():
       if (A4 - distance >= 0 and A4-distance <= 254):
         A4 = (A4 - distance)
         print(f'Motor {selectedMotor} is at {A4}')
+      #checks if the value is less than 0 and corrects for it
       elif (A4 - distance < 0):
         A4 = 0
         print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {A4}')
+      #checks if the value is too high(more than 254) and corrects for it
       elif (A4 - distance > 254):
         A4 = 254
         print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {A4}')
@@ -80,9 +87,11 @@ def motorControl():
         if (B1 - distance >= 0 and B1-distance <= 254):
           B1 = (B1 - distance)
           print(f'Motor {selectedMotor} is at {B1}')
+        #checks if the value is less than 0 and corrects for it
         elif (B1 - distance < 0):
           B1 = 0
           print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {B1}')
+        #checks if the value is too high(more than 254) and corrects for it
         elif (B1 - distance > 254):
           B1 = 254
           print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {B1}')
@@ -91,9 +100,11 @@ def motorControl():
         if (B2 - distance >= 0 and B2-distance <= 254):
           B2 = (B2 - distance)
           print(f'Motor {selectedMotor} is at {B2}')
+        #checks if the value is less than 0 and corrects for it
         elif (B2 - distance < 0):
           B2 = 0
           print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {B2}')
+        #checks if the value is too high(more than 254) and corrects for it
         elif (B2 - distance > 254):
           B2 = 254
           print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {B2}')
@@ -102,9 +113,11 @@ def motorControl():
         if (B3 - distance >= 0 and B3-distance <= 254):
           B3 = (B3 - distance)
           print(f'Motor {selectedMotor} is at {B3}')
+        #checks if the value is less than 0 and corrects for it
         elif (B3 - distance < 0):
           B3 = 0
           print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {B3}')
+        #checks if the value is too high(more than 254) and corrects for it
         elif (B3 - distance > 254):
           B3 = 254
           print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {B3}')
@@ -113,9 +126,11 @@ def motorControl():
         if (B4 - distance >= 0 and B4-distance <= 254):
           B4 = (B4 - distance)
           print(f'Motor {selectedMotor} is at {B4}')
+        #checks if the value is less than 0 and corrects for it
         elif (B4 - distance < 0):
           B4 = 0
           print(f'Value limited to floor of 0. Motor {selectedMotor} is now at {B4}')
+        #checks if the value is too high(more than 254) and corrects for it
         elif (B4 - distance > 254):
           B4 = 254
           print(f'Value limited to ceiling of 254. Motor {selectedMotor} is now at {B4}')
