@@ -12,7 +12,7 @@ def query():
     print(f'A1: {A1}\nA2: {A2}\nA3: {A3}\nA4: {A4}\nB1: {B1}\nB2: {B2}\nB3: {B3}\nB4: {B4}')
   else:
     print("command not recognized")
-#hi
+
 def motorControl():
   global A1, A2, A3, A4, B1, B2, B3, B4
   #queries to select arm, motor, and distance to move
