@@ -25,8 +25,6 @@ def motorControl():
   
   #sets the distance to move in increments of 25.4 mm
 
-
-
   #checks which arm and motor is selected and moves motor to the selected position
   if arm == "A":
     if motor == "1":
