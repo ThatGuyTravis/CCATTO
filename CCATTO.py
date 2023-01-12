@@ -1,9 +1,10 @@
-#sets a default value for all motors
+#Sets a default value for all motors
+#Default value is the mid point at 127mm
 global A1, A2, A3, A4, B1, B2, B3, B4
 A1, A2, A3, A4, B1, B2, B3, B4 = 127, 127, 127, 127, 127, 127, 127, 127
 
 def query():
-  query = str(input("What would you like to do? "))
+  query = str(input("What would you like to do?P "))
   query = query.lower()
   
   if (query == "move motor"):
